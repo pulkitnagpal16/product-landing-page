@@ -43,13 +43,13 @@
     }
 
     .ps{
-        height:100%;
         width:100%;
+        height: auto;
     }
 
     .yt{
         text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 15px;
     }
     
@@ -61,7 +61,7 @@
     }
 
     .ps-1{
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 
@@ -86,32 +86,15 @@
     }
 
     .controller{
-        height: 100%;
+        height: auto;
         width: 100%;
     }
-
-    .list1{
-        text-align: left;
+    .game-list > ul{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 15px;
-    }
+        font-size: 1em;
+        
+   }
    
-   .list2{
-       text-align: center;
-       margin-top: -200px;
-       margin-right: auto;
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-       font-size: 15px;
-   }
-
-   .list3{
-       text-align: right;
-       margin-top: -180px;
-       margin-right: 80px;
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-       font-size: 15px;
-   }
-
    .games{
        background-color: ghostwhite;
        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -145,6 +128,7 @@
    footer{
        background-color: black;
    }
+   
 </style>
 
 
@@ -154,6 +138,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     
@@ -176,9 +161,8 @@
     <br>
     <hr>
     
-    <center>
-        <img class = "ps" src="ps5.jpg">
-    </center>
+        
+            <img class = "ps" src="ps5.jpg">
 
     <div class="yt">
        Watch the reveal trailer <a href="https://www.youtube.com/watch?v=RkC0l4iekYo">here</a>
@@ -227,13 +211,14 @@
     
     <img class="controller" src="ctrl.jpg">
 
-    <div class="games">
+    <div class="games container-fluid">
         <br>
         <h2>Games</h2>
         <p>The following games will be available after launch:</p>
         
-        
-        <ul class="list1">
+        <div class="row game-list">
+            
+        <ul class="list1 col-sm">
             <ol>Astro's Playroom</ol>
             <ol>Bugsnax</ol>
             <ol>DEATHLOOP</ol>
@@ -248,7 +233,7 @@
         </ul>
 
 
-        <ul class="list2">
+        <ul class="list2 col-sm">
             <ol>HITMAN 3 </ol>
              <ol>Horizon Forbidden West</ol>
             <ol>JETT : The Far Shore®</ol>
@@ -261,7 +246,7 @@
         </ul>
 
 
-        <ul class="list3">
+        <ul class="list3 col-sm">
             <ol>Project Athia *(working title)</ol>
             <ol>Ratchet & Clank: Rift Apart</ol>
             <ol>Resident Evil 8</ol>
@@ -272,6 +257,7 @@
             <ol>The Pathless</ol>
             <ol>Tribes of Midgard</ol>
         </ul>
+        </div>
         <br><br>
     </div>
     <br>
